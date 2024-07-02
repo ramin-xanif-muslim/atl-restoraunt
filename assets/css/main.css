@@ -1,13 +1,11 @@
 :root {
     --orange-color: #fc8a06;
-    --base-font-size: 16px; /* 1rem = 16px */
 }
 
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    font-size: var(--base-font-size);
 }
 
 .color-orange {
@@ -28,9 +26,6 @@ nav ul {
     font-size: 18px;
     font-weight: 500;
     line-height: 27px;
-}
-
-nav ul li {
 }
 
 nav ul li a {
@@ -56,8 +51,6 @@ header button {
 }
 
 .header-content {
-    /* background: var(--orange-color);
-    color: white; */
     padding: 10px 20px;
     display: flex;
     justify-content: center;
@@ -68,15 +61,6 @@ header button {
     width: 80px;
     height: 80px;
 }
-
-/* .hero {
-    background: rgb(192, 192, 192);
-    background: linear-gradient(
-        90deg,
-        rgba(192, 192, 192, 1) 50%,
-        rgba(255, 255, 255, 1) 100%
-    );
-} */
 
 .hero {
     background-image: url("/assets/images/logo-removebg.png");
@@ -136,7 +120,7 @@ header button {
     border-radius: 120px;
     color: #fff;
     transform: translate(60px);
-    transition: all 0.5s ease;
+    transition: transform 0.5s ease;
 }
 .search .btn:hover {
     transform: translate(0px);
@@ -146,7 +130,7 @@ header button {
 }
 .search .btn span {
     visibility: hidden;
-    transition: all 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out;
 }
 .search .btn:hover span {
     visibility: visible;
@@ -160,6 +144,7 @@ header button {
     background-color: var(--orange-color);
     display: flex;
     flex-direction: column;
+    margin-bottom: 100px;
 }
 .hero-content .right .list {
     display: flex;
@@ -247,6 +232,7 @@ header button {
     line-height: 24px;
 }
 .deals .header .tabs .tab {
+    border: 1px solid transparent;
     padding: 10px 30px;
     cursor: pointer;
 }
@@ -279,7 +265,8 @@ header button {
 .deals-content .deal img {
     display: block;
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
 }
 .deals-content .deal .discount {
     position: absolute;
@@ -339,15 +326,16 @@ header button {
 .popular-categories .categories {
     margin-top: 30px;
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     gap: 20px;
 }
 .popular-categories .categories .category {
-    width: 238px;
+    width: calc((100% - (20px * 4)) / 5);
     height: 266px;
     border-radius: 12px;
     border: 1px solid #0000001a;
     overflow: hidden;
+    flex-shrink: 0;
 }
 .popular-categories .categories .category img {
     width: 238px;
@@ -391,13 +379,15 @@ header button {
     gap: 20px;
 }
 .popular-restaurants .restaurants .cart {
-    width: 238px;
+    width: calc((100% - (20px * 4)) / 5);
     height: 266px;
     border-radius: 12px;
     border: 1px solid #00000033;
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    flex-shrink: 0;
+    flex-wrap: wrap;
 
     img {
         width: 100%;
