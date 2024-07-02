@@ -1,0 +1,21 @@
+
+.pipe {
+    padding: 0 95px;
+}
+.poppins {
+    font-family: "Poppins", sans-serif;
+}
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.opacity-5 {
+    opacity: 0.5;
+}
+.translate-300 {
+    translate: -200px;
+}
+.relative {
+    position: relative;
+}
