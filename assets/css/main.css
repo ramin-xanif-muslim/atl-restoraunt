@@ -22,7 +22,7 @@ nav ul {
     padding: 0;
     display: flex;
     gap: 40px;
-    font-family: Poppins;
+    font-family: Poppins, sans-serif;
     font-size: 18px;
     font-weight: 500;
     line-height: 27px;
@@ -33,11 +33,7 @@ nav ul li a {
     text-decoration: none;
     padding: 8px 16px;
 }
-nav ul li a.active {
-    color: white;
-    background-color: var(--orange-color);
-    border-radius: 25px;
-}
+nav ul li a.active,
 nav ul li a:active {
     color: white;
     background-color: var(--orange-color);
@@ -67,7 +63,6 @@ header button {
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-
     height: 610px;
     display: flex;
     position: relative;
@@ -87,14 +82,14 @@ header button {
     flex-direction: column;
     gap: 20px;
 }
-.hero-content .leff p {
-    font-family: Poppins;
+.hero-content .left p {
+    font-family: Poppins, sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 66px;
 }
-.hero-content .leff h2 {
-    font-family: Poppins;
+.hero-content .left h2 {
+    font-family: Poppins, sans-serif;
     font-size: 54px;
     font-weight: 600;
     line-height: 66px;
@@ -112,15 +107,16 @@ header button {
 .search input {
     all: unset;
     padding-left: 20px;
+    width: 100%;
 }
 
 .search .btn {
     background-color: var(--orange-color);
-    width: 100%;
+    width: 200px;
     border-radius: 120px;
     color: #fff;
     transform: translate(60px);
-    transition: transform 0.5s ease;
+    transition: all 0.5s ease;
 }
 .search .btn:hover {
     transform: translate(0px);
@@ -130,9 +126,11 @@ header button {
 }
 .search .btn span {
     visibility: hidden;
-    transition: transform 0.5s ease-in-out;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
 }
 .search .btn:hover span {
+    opacity: 1;
     visibility: visible;
 }
 
@@ -144,7 +142,6 @@ header button {
     background-color: var(--orange-color);
     display: flex;
     flex-direction: column;
-    margin-bottom: 100px;
 }
 .hero-content .right .list {
     display: flex;
@@ -196,7 +193,6 @@ header button {
     -webkit-text-stroke: 2px white;
 }
 .hero-content .right .order-item .item {
-    /* position: absolute; */
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     padding: 10px;
     border-radius: 10px;
@@ -205,11 +201,12 @@ header button {
     gap: 10px;
     background-color: #fff;
     justify-content: flex-start;
-    .head {
-        display: flex;
-        justify-content: space-between;
-    }
 }
+.hero-content .right .order-item .item .head {
+    display: flex;
+    justify-content: space-between;
+}
+
 .deals {
     margin: 53px 30px 0;
 }
@@ -219,14 +216,14 @@ header button {
     align-items: center;
 }
 .deals .header h2 {
-    font-family: Poppins;
+    font-family: Poppins, sans-serif;
     font-size: 32px;
     font-weight: 700;
     line-height: 48px;
 }
 .deals .header .tabs {
     display: flex;
-    font-family: Poppins;
+    font-family: Poppins, sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -236,11 +233,7 @@ header button {
     padding: 10px 30px;
     cursor: pointer;
 }
-.deals .header .tabs .tab.active {
-    border: 1px solid var(--orange-color);
-    border-radius: 25px;
-    color: var(--orange-color);
-}
+.deals .header .tabs .tab.active,
 .deals .header .tabs .tab:active {
     border: 1px solid var(--orange-color);
     border-radius: 25px;
@@ -249,6 +242,7 @@ header button {
 .deals .header .tabs .tab:hover {
     color: var(--orange-color);
 }
+
 .deals-content {
     margin-top: 30px;
     display: flex;
@@ -277,7 +271,7 @@ header button {
     top: 0;
     right: 20px;
     z-index: 2;
-    font-family: Poppins;
+    font-family: Poppins, sans-serif;
     font-size: 18px;
     font-weight: 700;
     line-height: 27px;
@@ -294,34 +288,30 @@ header button {
     width: 100%;
     height: 100%;
     color: #fff;
-    font-family: Poppins;
-    box-shadow: rgba(50, 50, 93, 0.25) 60px 30px 60px -22px inset,
-        rgba(0, 0, 0, 0.3) 180px 30px 56px -28px inset;
-
-    p {
-        font-size: 18px;
-        font-weight: 500;
-        line-height: 27px;
-        color: var(--orange-color);
-    }
-    h3 {
-        font-family: Poppins;
-        font-size: 24px;
-        font-weight: 700;
-    }
+    font-family: Poppins, sans-serif;
+    box-shadow: rgba(50, 50, 93, 0.25) 60px 30px 60px -22px inset, rgba(0, 0, 0, 0.3) 180px 30px 56px -28px inset;
+}
+.deals-content .deal .desc p {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    color: var(--orange-color);
+}
+.deals-content .deal .desc h3 {
+    font-size: 24px;
+    font-weight: 700;
 }
 
 .popular-categories {
     margin: 53px 30px 0;
     display: flex;
     flex-direction: column;
-
-    h2 {
-        font-family: Poppins;
-        font-size: 32px;
-        font-weight: 700;
-        line-height: 48px;
-    }
+}
+.popular-categories h2 {
+    font-family: Poppins, sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 48px;
 }
 .popular-categories .categories {
     margin-top: 30px;
@@ -338,40 +328,37 @@ header button {
     flex-shrink: 0;
 }
 .popular-categories .categories .category img {
-    width: 238px;
+    width: 100%;
     height: 203px;
     object-fit: cover;
 }
 .popular-categories .categories .category .footer {
     padding: 10px 22px;
-    object-fit: cover;
-
-    h3 {
-        font-family: Poppins;
-        font-size: 18px;
-        font-weight: 700;
-        line-height: 27px;
-    }
-    p {
-        font-family: Poppins;
-        font-size: 13px;
-        font-weight: 400;
-        line-height: 19px;
-        color: var(--orange-color);
-    }
 }
+.popular-categories .categories .category .footer h3 {
+    font-family: Poppins, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 27px;
+}
+.popular-categories .categories .footer p {
+    font-family: Poppins, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 19px;
+    color: var(--orange-color);
+}
+
 .popular-restaurants {
     margin: 53px 30px 0;
     display: flex;
     flex-direction: column;
 }
-.popular-restaurants .header {
-    h2 {
-        font-family: Poppins;
-        font-size: 32px;
-        font-weight: 700;
-        line-height: 48px;
-    }
+.popular-restaurants .header h2 {
+    font-family: Poppins, sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 48px;
 }
 .popular-restaurants .restaurants {
     margin-top: 30px;
@@ -388,25 +375,24 @@ header button {
     flex-direction: column;
     flex-shrink: 0;
     flex-wrap: wrap;
-
-    img {
-        width: 100%;
-        flex-grow: 1;
-        object-fit: cover;
-    }
-    .footer {
-        background-color: var(--orange-color);
-        color: #fff;
-        width: 100%;
-        padding: 18px 40px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-family: Poppins;
-        font-size: 18px;
-        font-weight: 700;
-        line-height: 27px;
-    }
+}
+.popular-restaurants .restaurants .cart img {
+    width: 100%;
+    flex-grow: 1;
+    object-fit: cover;
+}
+.popular-restaurants .restaurants .cart .footer {
+    background-color: var(--orange-color);
+    color: #fff;
+    width: 100%;
+    padding: 18px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Poppins, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 27px;
 }
 
 footer {
@@ -415,4 +401,110 @@ footer {
     color: white;
     text-align: center;
     padding: 20px;
+}
+
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+/* Медиа-запросы для адаптивности */
+@media (max-width: 600px) {
+    .nav {
+        display: none;
+    }
+    .burger {
+        display: block;
+    }
+    .header-content {
+        justify-content: space-between;
+        gap: 20px;
+    }
+    .hero-content .right {
+        display: none;
+    }
+}
+@media (max-width: 768px) {
+    nav ul {
+        gap: 10px;
+    }
+
+    .hero-content {
+        text-align: center;
+    }
+    .deals .header {
+        flex-direction: column;
+    }
+    .popular-categories .categories {
+        flex-direction: column;
+    }
+    .deals-content {
+        flex-direction: column;
+    }
+    .popular-restaurants .restaurants {
+        flex-direction: column;
+    }
+    .deals .header .tabs {
+        justify-content: center;
+    }
+
+    .deals-content .deal {
+        height: auto;
+    }
+
+    .popular-categories .categories .category,
+    .popular-restaurants .restaurants .cart {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .hero {
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .hero-content .left h2 {
+        font-size: 36px;
+    }
+
+    .search {
+        /* flex-direction: column; */
+        height: auto;
+    }
+
+    .search input {
+        padding: 10px;
+        width: 100%;
+    }
+
+    .search .btn {
+        display: none;
+        transform: translate(0);
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .hero-content .right {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .deals .header h2,
+    .popular-categories h2,
+    .popular-restaurants .header h2 {
+        font-size: 24px;
+    }
+
+    .deals .header .tabs {
+        /* flex-direction: column; */
+        font-size: 10px;
+        gap: 10px;
+        }
+        .deals .header .tabs .tab {
+            padding: 2px 5px;
+
+        }
 }

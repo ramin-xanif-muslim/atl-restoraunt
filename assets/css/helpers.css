@@ -1,7 +1,21 @@
 
 .pipe {
     padding: 0 95px;
-    /* max-width: 1200px; */
+}
+@media (max-width: 1120px) {
+    .pipe {
+        padding: 0 45px;
+    }
+}
+@media (max-width: 800px) {
+    .pipe {
+        padding: 0 20px;
+    }
+}
+@media (max-width: 600px) {
+    .pipe {
+        padding: 0 10px;
+    }
 }
 .poppins {
     font-family: "Poppins", sans-serif;
