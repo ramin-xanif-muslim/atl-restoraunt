@@ -524,6 +524,9 @@ footer {
 
 /* Медиа-запросы для адаптивности */
 @media (max-width: 600px) {
+    .personalised {
+        display: none;
+    }
     .nav {
         display: none;
     }
