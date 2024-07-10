@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../dateat.az"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "dateat.az"
+	}
+}

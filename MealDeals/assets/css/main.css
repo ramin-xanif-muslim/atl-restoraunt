@@ -1,0 +1,250 @@
+:root {
+    --orage: #fc8a06;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    padding: 0;
+}
+
+.container {
+    width: 650px;
+    height: 840px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    position: relative;
+    margin-top: 50px;
+
+}
+.pipe {
+    padding: 0 50px;
+}
+
+.image {
+    width: 100%;
+    height: 166px;
+    border-radius: 12px, 12px, 0px, 0px;
+}
+
+.special {
+    margin-bottom: 26px;
+    margin-top: 10px;
+    color: #777;
+    font-weight: 700;
+}
+
+.special .icon {
+    padding: 0 5px;
+}
+
+.special .meal {
+    padding: 0 5px;
+}
+
+.special a {
+    color: #03081F;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+    font-weight: 400;
+    margin-top: 26px;
+}
+
+.pizza-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #E8E8E8;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.pizza-item.select {
+    background-color: #03081F;
+    color: #fff;  
+}
+
+.pizza-item img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.pizza-name {
+    flex-grow: 1;
+    font-size: 20px;
+    font-weight: 700;
+    width: 186px;
+    height: 58px;
+    display: flex;
+    align-items: center;
+}
+
+.pizza-name-select {
+    flex-grow: 1;
+    color: #FC8A06;
+    font-size: 20px;
+    font-weight: 700;
+    width: 186px;
+    height: 58px;
+    display: flex;
+    align-items: center;
+}
+
+.quantity .minus, .plus {
+    background-color: #03081F;
+    color: #E8E8E8;
+}
+
+.quantity-select .minus-select {
+    background-color: #B8B8B8;
+    color: #03081F;
+    border-radius: 50%;
+    font-weight: 700;
+    width: 30px;
+    height: 30px;
+}
+
+.quantity-select .count-select {
+    background-color: #fff;
+    color: #03081F;
+    background-color: #fff;
+    font-weight: 700;
+    padding: 18px 20px;
+    border-radius: 10px;
+}
+
+.quantity-select .plus-select {
+    background-color: #B8B8B8;
+    color: #03081F;
+    border-radius: 50%;
+    font-weight: 700;
+    width: 30px;
+    height: 30px;
+} 
+
+.quantity .minus,.quantity .plus,
+.quantity-select .minus-select, .quantity-select .plus-select {
+    padding: 6px;
+    margin: 10px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+
+.quantity .count {
+    background-color: #fff;
+    font-weight: 700;
+    padding: 18px 20px;
+    border-radius: 10px;
+}
+
+.total {
+    height: 50px;
+    width: 200px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #FDA138;
+    border-radius: 8px;
+    padding: 0 10px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.total .pay {
+    padding-top: 18px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+}   
+
+.total .price {
+    color: #fff;
+    padding-bottom: 40px;
+    margin-top: -15px;
+    font-size:  20px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.delivery {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    margin-top: -30px;
+    font-size: 14px;
+    color: #000000;
+    font-weight: 400;
+}
+
+.actions {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 15px;
+}
+
+.actions .back {
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.actions .next {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #028643;
+    border: 1px solid #0000001c;
+    border-radius: 8px;
+    font-weight: 600;
+    color: #fff;
+    height: 50px;
+    width: 200px;
+
+    .next-step {
+        display: flex;
+    }
+} 
+
+.actions .next .icon-next {
+    position: absolute;
+    left: 10px;
+    color: #028643;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.close-btn {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        background: var(--orage);
+        top: -25px;
+        right: -25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        color: #fff;
+        cursor: pointer;
+      
+        i {
+          font-size: 26px;
+        }
+      }

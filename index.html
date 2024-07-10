@@ -1,206 +1,274 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ordering</title>
-    <link rel="stylesheet" href="./assets/css/style.css" />
-</head>
-<body>
-    <header>
-        <div class="header-content pipe">
-            <div class="logo">
-                <img src="./assets/images/logo.png" alt="Logo" />
-            </div>
-            <div class="burger">
-                <i class="fa fa-bars"></i>
-            </div>
-            <nav class="nav">
-                <ul>
-                    <li><a class="active" href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <section class="hero pipe">
-        <div class="hero-content">
-            <div class="left">
-                <p>Order Restaurant food, takeaway and groceries.</p>
-                <h2>Feast Your Senses,</h2>
-                <h2 class="color-orange">Fast and Fresh</h2>
-                <form class="search">
-                    <input type="text" placeholder="Search..." />
-                    <button type="submit" class="btn">
-                        <i class="fa fa-search"></i>
-                        <span>Search</span>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Ordering</title>
+        <link rel="stylesheet" href="./assets/css/style.css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body>
+        <header>
+            <div class="header-content pipe">
+                <div class="logo">
+                    <img src="./assets/images/logo.png" alt="Logo" />
+                </div>
+                <div class="burger">
+                    <a href="./mobile-nav-modal/index.html">
+                        <i class="fa fa-bars"></i
+                    ></a>
+                </div>
+                <nav class="nav">
+                    <ul>
+                        <li><a class="active" href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="/popups">Track Order</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+                <a href="MealDeals/">
+                    <button class="basket">
+                        <i class="fa-solid fa-basket-shopping"></i>
+                        <span class="count">6</span>
                     </button>
-                </form>
+                </a>
+            </div>
+        </header>
+
+        <section class="hero pipe">
+            <div class="hero-content">
+                <div class="left">
+                    <p>Order Restaurant food, takeaway and groceries.</p>
+                    <h2>Feast Your Senses,</h2>
+                    <h2 class="color-orange">Fast and Fresh</h2>
+                    <form class="search">
+                        <input type="text" placeholder="Search..." />
+                        <button type="submit" class="btn">
+                            <i class="fa fa-search"></i>
+                            <span>Search</span>
+                        </button>
+                    </form>
+                </div>
+                <div class="right">
+                    <div class="list">
+                        <div class="order-item">
+                            <div class="num">1</div>
+                            <div class="item">
+                                <div class="head">
+                                    <span>Order</span>
+                                    <span class="opacity-5">now</span>
+                                </div>
+                                <div class="title">
+                                    We’ve Received your order!
+                                </div>
+                                <p>Awaiting Restaurant acceptance</p>
+                            </div>
+                        </div>
+                        <div class="order-item translate-300">
+                            <div class="num">2</div>
+                            <div class="item">
+                                <div class="head">
+                                    <span>Order</span>
+                                    <span class="opacity-5">now</span>
+                                </div>
+                                <div class="title">
+                                    We’ve Received your order!
+                                </div>
+                                <p>Awaiting Restaurant acceptance</p>
+                            </div>
+                        </div>
+                        <div class="order-item">
+                            <div class="num">3</div>
+                            <div class="item">
+                                <div class="head">
+                                    <span>Order</span>
+                                    <span class="opacity-5">now</span>
+                                </div>
+                                <div class="title">
+                                    We’ve Received your order!
+                                </div>
+                                <p>Awaiting Restaurant acceptance</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="deals pipe">
+            <div class="header">
+                <h2>Up to -40% 🎊 Order.uk exclusive deals</h2>
+                <div class="tabs">
+                    <div class="tab">Vegan</div>
+                    <div class="tab">Sushi</div>
+                    <div class="tab active">Pizza & Fast food</div>
+                    <div class="tab">Others</div>
+                </div>
+            </div>
+            <div class="deals-content">
+                <div class="deal">
+                    <img
+                        src="https://plus.unsplash.com/premium_photo-1673108852141-e8c3c22a4a22?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="deal"
+                    />
+                    <div class="discount">-40%</div>
+                    <div class="desc">
+                        <p>Restaurant</p>
+                        <h3>Chef Burgers London</h3>
+                    </div>
+                </div>
+                <div class="deal">
+                    <img
+                        src="https://plus.unsplash.com/premium_photo-1673108852141-e8c3c22a4a22?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="deal"
+                    />
+                    <div class="discount">-20%</div>
+                    <div class="desc">
+                        <p>Restaurant</p>
+                        <h3>Chef Burgers London</h3>
+                    </div>
+                </div>
+                <div class="deal">
+                    <img
+                        src="https://plus.unsplash.com/premium_photo-1673108852141-e8c3c22a4a22?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="deal"
+                    />
+                    <div class="discount">-15%</div>
+                    <div class="desc">
+                        <p>Restaurant</p>
+                        <h3>Chef Burgers London</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="popular-categories pipe">
+            <h2>Order.uk Popular Categories 🤩</h2>
+            <div class="categories">
+                <div class="category">
+                    <a href="/ordering">
+                        <img src="./assets/images/MD.webp" alt="category" />
+                        <div class="footer">
+                            <h3>Burgers & Fast food</h3>
+                            <p class="info">21 Restaurants</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="category">
+                    <img
+                        src="https://images.unsplash.com/photo-1521305916504-4a1121188589?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="category"
+                    />
+                    <div class="footer">
+                        <h3>Burgers & Fast food</h3>
+                        <p class="info">21 Restaurants</p>
+                    </div>
+                </div>
+                <div class="category">
+                    <img
+                        src="https://images.unsplash.com/photo-1521305916504-4a1121188589?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="category"
+                    />
+                    <div class="footer">
+                        <h3>Burgers & Fast food</h3>
+                        <p class="info">21 Restaurants</p>
+                    </div>
+                </div>
+                <div class="category">
+                    <img
+                        src="https://images.unsplash.com/photo-1521305916504-4a1121188589?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="category"
+                    />
+                    <div class="footer">
+                        <h3>Burgers & Fast food</h3>
+                        <p class="info">21 Restaurants</p>
+                    </div>
+                </div>
+                <div class="category">
+                    <img
+                        src="https://images.unsplash.com/photo-1521305916504-4a1121188589?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="category"
+                    />
+                    <div class="footer">
+                        <h3>Burgers & Fast food</h3>
+                        <p class="info">21 Restaurants</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="popular-restaurants pipe">
+            <div class="header">
+                <h2>Popular Restaurants</h2>
+            </div>
+            <div class="restaurants">
+                <div class="cart">
+                    <img src="./assets/images/Kfc_logo.png" alt="KFC logo" />
+                    <div class="footer">
+                        <h3>Papa John's</h3>
+                    </div>
+                </div>
+                <div class="cart">
+                    <img src="./assets/images/Kfc_logo.png" alt="KFC logo" />
+                    <div class="footer">
+                        <h3>Papa John's</h3>
+                    </div>
+                </div>
+                <div class="cart">
+                    <img src="./assets/images/Kfc_logo.png" alt="KFC logo" />
+                    <div class="footer">
+                        <h3>Papa John's</h3>
+                    </div>
+                </div>
+                <div class="cart">
+                    <img src="./assets/images/Kfc_logo.png" alt="KFC logo" />
+                    <div class="footer">
+                        <h3>Papa John's</h3>
+                    </div>
+                </div>
+                <div class="cart">
+                    <img src="./assets/images/Kfc_logo.png" alt="KFC logo" />
+                    <div class="footer">
+                        <h3>Papa John's</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="personalised mx-[125px]">
+            <div class="bg"></div>
+            <div class="left">
+                <img
+                    class="object-contain drop-shadow"
+                    src="./assets/images/personalised.png"
+                    alt=""
+                />
             </div>
             <div class="right">
-                <div class="list">
-                    <div class="order-item">
-                        <div class="num">1</div>
-                        <div class="item">
-                            <div class="head">
-                                <span>Order</span>
-                                <span class="opacity-5">now</span>
-                            </div>
-                            <div class="title">We’ve Received your order!</div>
-                            <p>Awaiting Restaurant acceptance</p>
-                        </div>
-                    </div>
-                    <div class="order-item translate-300">
-                        <div class="num">2</div>
-                        <div class="item">
-                            <div class="head">
-                                <span>Order</span>
-                                <span class="opacity-5">now</span>
-                            </div>
-                            <div class="title">We’ve Received your order!</div>
-                            <p>Awaiting Restaurant acceptance</p>
-                        </div>
-                    </div>
-                    <div class="order-item">
-                        <div class="num">3</div>
-                        <div class="item">
-                            <div class="head">
-                                <span>Order</span>
-                                <span class="opacity-5">now</span>
-                            </div>
-                            <div class="title">We’ve Received your order!</div>
-                            <p>Awaiting Restaurant acceptance</p>
-                        </div>
+                <div class="header">
+                    <h2><span>Personalised</span> & Instant</h2>
+                </div>
+                <div class="desc">
+                    <p>Download the Order.uk app for faster ordering</p>
+                    <div class="buttons-group">
+                        <button class="btn">
+                            <i class="fa-brands fa-apple"></i>
+                            <span>App Store</span>
+                        </button>
+                        <button class="btn">
+                            <i class="fa-brands fa-google-play"></i>
+                            <span>Google Play</span>
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
 
-    <section class="deals pipe">
-        <div class="header">
-            <h2>Up to -40% 🎊 Order.uk exclusive deals</h2>
-            <div class="tabs">
-                <div class="tab">Vegan</div>
-                <div class="tab">Sushi</div>
-                <div class="tab active">Pizza & Fast food</div>
-                <div class="tab">Others</div>
+        <footer>
+            <div class="footer-content">
+                <p>© 2024 Orderr. All rights reserved.</p>
             </div>
-        </div>
-        <div class="deals-content">
-            <div class="deal">
-                <img src="https://plus.unsplash.com/premium_photo-1673108852141-e8c3c22a4a22?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="deal">
-                <div class="discount">-40%</div>
-                <div class="desc">
-                    <p>Restaurant</p>
-                    <h3>Chef Burgers London</h3>
-                </div>
-            </div>  
-            <div class="deal">
-                <img src="https://plus.unsplash.com/premium_photo-1673108852141-e8c3c22a4a22?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="deal">
-                <div class="discount">-20%</div>
-                <div class="desc">
-                    <p>Restaurant</p>
-                    <h3>Chef Burgers London</h3>
-                </div>
-            </div>  
-            <div class="deal">
-                <img src="https://plus.unsplash.com/premium_photo-1673108852141-e8c3c22a4a22?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="deal">
-                <div class="discount">-15%</div>
-                <div class="desc">
-                    <p>Restaurant</p>
-                    <h3>Chef Burgers London</h3>
-                </div>
-            </div>  
-        </div>
-    </section>
-
-    <section class="popular-categories pipe">
-        <h2>Order.uk Popular Categories 🤩</h2>
-        <div class="categories">
-            <div class="category">
-                <img src="https://images.unsplash.com/photo-1521305916504-4a1121188589?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="category">
-                <div class="footer">
-                    <h3>Burgers & Fast food</h3>
-                    <p class="info">21 Restaurants</p>
-                </div>
-            </div>
-            <div class="category">
-                <img src="https://images.unsplash.com/photo-1521305916504-4a1121188589?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="category">
-                <div class="footer">
-                    <h3>Burgers & Fast food</h3>
-                    <p class="info">21 Restaurants</p>
-                </div>
-            </div>
-            <div class="category">
-                <img src="https://images.unsplash.com/photo-1521305916504-4a1121188589?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="category">
-                <div class="footer">
-                    <h3>Burgers & Fast food</h3>
-                    <p class="info">21 Restaurants</p>
-                </div>
-            </div>
-            <div class="category">
-                <img src="https://images.unsplash.com/photo-1521305916504-4a1121188589?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="category">
-                <div class="footer">
-                    <h3>Burgers & Fast food</h3>
-                    <p class="info">21 Restaurants</p>
-                </div>
-            </div>
-            <div class="category">
-                <img src="https://images.unsplash.com/photo-1521305916504-4a1121188589?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="category">
-                <div class="footer">
-                    <h3>Burgers & Fast food</h3>
-                    <p class="info">21 Restaurants</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="popular-restaurants pipe">
-        <div class="header">
-            <h2>Popular Restaurants</h2>
-        </div>
-        <div class="restaurants">
-            <div class="cart">
-                <img src="./assets/images/Kfc_logo.png" alt="KFC logo">
-                <div class="footer">
-                    <h3>Papa John's</h3>
-                </div>  
-            </div>
-            <div class="cart">
-                <img src="./assets/images/Kfc_logo.png" alt="KFC logo">
-                <div class="footer">
-                    <h3>Papa John's</h3>
-                </div>  
-            </div>
-            <div class="cart">
-                <img src="./assets/images/Kfc_logo.png" alt="KFC logo">
-                <div class="footer">
-                    <h3>Papa John's</h3>
-                </div>  
-            </div>
-            <div class="cart">
-                <img src="./assets/images/Kfc_logo.png" alt="KFC logo">
-                <div class="footer">
-                    <h3>Papa John's</h3>
-                </div>  
-            </div>
-            <div class="cart">
-                <img src="./assets/images/Kfc_logo.png" alt="KFC logo">
-                <div class="footer">
-                    <h3>Papa John's</h3>
-                </div>  
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <div class="footer-content">
-            <p>© 2024 Orderr. All rights reserved.</p>
-        </div>
-    </footer>
-</body>
+        </footer>
+    </body>
 </html>

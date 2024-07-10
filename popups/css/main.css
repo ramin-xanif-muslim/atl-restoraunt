@@ -1,0 +1,198 @@
+body{
+    background-color: grey;
+}
+
+.daire {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.daire i{
+    position: absolute;
+    top: -40px;
+    right: -40px;
+
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    background-color: #03081F;
+    width: 80px;
+    height: 80px;
+    color: #fff;
+    border-radius: 120px;
+}
+
+.container{
+    background-color: #fff;
+    width: 1270px;
+    height: 880px;
+    margin: 100px auto;
+    border-radius: 12px;
+    box-shadow: 20px 24px 44px 0px #00000080; 
+}
+
+.box{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.left img{
+    object-fit: cover;
+}
+
+.right .text{
+    padding-top: 188px;
+    padding-left: 57px;
+}
+
+.text h1{
+    font-family: Poppins;
+font-size: 54px;
+font-weight: 700;
+line-height: 58px;
+text-align: left;
+padding-bottom: 10px;
+}
+
+.text .post{
+   color: #049801;
+   font-family: Poppins;
+   font-size: 54px;
+   font-weight: 700;
+   line-height: 58px;
+   text-align: left;
+}
+
+.text p{
+    font-family: Poppins;
+font-size: 26px;
+font-weight: 400;
+line-height: 40px;
+text-align: left;
+width: 487px;
+height: 80px;
+padding-top: 30px;
+}
+
+.ikibuton .bir{
+ width: 625px;
+height: 99px;
+border-radius: 120px 0px 0px 120px;
+background-color: #EFEFEF;
+margin-top: 80px;
+border: none;
+position: absolute;
+}
+
+.bir h3{
+    font-family: Poppins;
+font-size: 32px;
+font-weight: 500;
+line-height: 48px;
+text-align: left;
+padding-left: 50px;
+color: #000;
+opacity: 80%;
+}
+
+.ikibuton .iki{
+width: 237px;
+height: 99px;
+border-radius: 0px 120px 120px 0px;
+position: relative;
+border: none;
+background-color: #03081F;
+margin-left: 600px;
+margin-top: 80px;
+}
+
+.iki h4{
+font-family: Poppins;
+font-size: 42px;
+font-weight: 700;
+line-height: 48px;
+text-align: center;
+color: #fff;
+}
+
+.linkbir a{
+    font-family: Poppins;
+font-size: 26px;
+font-weight: 700;
+line-height: 40px;
+text-align: left;
+color: #049801;
+}
+
+.linkbir{
+    margin-top: 50px;
+    position: relative;
+}
+
+
+.lines{
+    margin-left: 100px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+}
+
+ .lines .linebir{
+    width: 200px;
+    height: 3px;
+    background-color: #FC8A06;
+    position: absolute;
+    margin-top: 20px;
+    display: inline-block;
+    margin-right: 320px;
+}
+
+.lines .lineiki{
+    width: 200px;
+    height: 3px;
+    background-color: #FC8A06;
+    position: absolute;
+    margin-top: 20px;
+    display: inline-block;
+    margin-left: 320px;
+}
+.or{
+font-family: Poppins;
+font-size: 26px;
+font-weight: 700;
+line-height: 48px;
+position: relative;
+margin-left: 250px;
+}
+
+.linkiki a{
+font-family: Poppins;
+font-size: 22px;
+font-weight: 700;
+line-height: 48px;
+text-align: center;
+color: #03081F;
+padding-left: 235px;
+position: relative;
+padding-top: 10px;
+}
+
+.icon {
+    position: absolute;
+    padding-top: 30px;
+}
+
+.icon i{
+    font-size: 150px;
+    opacity: 20%;
+}
+
+
+
+
+
+
