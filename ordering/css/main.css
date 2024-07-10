@@ -1,3 +1,7 @@
+:root {
+    --orange-color: #fc8a06;
+    --green-color: #028643;
+}
 body {
     margin: 0;
     padding: 0;
