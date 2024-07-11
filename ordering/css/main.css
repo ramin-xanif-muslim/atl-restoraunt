@@ -1203,5 +1203,19 @@ line-height: 20px;
     margin-top: 124px;
     margin-left: 150px;
 }
+.footer-content {
+    background: #03081F;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    p {
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 22px;
+    }
+}
 
 /* Restaurant hisse bitdi*/
