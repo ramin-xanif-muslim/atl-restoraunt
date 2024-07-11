@@ -465,8 +465,10 @@ nav ul li a:active {
     margin-bottom: 64px;
     height: 511px;
     position: relative;
+    border-radius: 10px;
 
     .bg {
+        border-radius: 10px;
         position: absolute;
         z-index: -10;
 
@@ -494,7 +496,7 @@ nav ul li a:active {
     justify-content: center;
     align-items: end;
     flex-direction: column;
-    margin-right: 20%;
+    margin-right: 100px;
 
     .header {
         background-color: #03081f;
